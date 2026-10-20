@@ -1,0 +1,15 @@
+# Hệ điều hành & IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Nhật ký & Tạm thời
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules (nếu có cài sau này)
+node_modules/

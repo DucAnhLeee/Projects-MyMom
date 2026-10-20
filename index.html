@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF9F2">
+  <meta name="description" content="Món quà ấm áp và những khoảnh khắc yêu thương gửi tặng Mẹ kính yêu nhân Ngày Phụ Nữ Việt Nam 20/10.">
+
+  <!-- Open Graph / Zalo / Facebook / Messenger -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thư Gửi Mẹ Yêu Thương - Mừng Ngày 20/10 💌">
+  <meta property="og:description" content="Chạm vào phong thư để mở món quà yêu thương và xem lại những khoảnh khắc sum vầy của gia đình mình Mẹ nhé!">
+  <meta property="og:image" content="images/01-gia-dinh-hanh-phuc.svg">
+
+  <title>Gửi Mẹ Yêu Thương 💌 | 20/10</title>
+
+  <!-- Favicon Heart -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+
+  <!-- Google Fonts: Be Vietnam Pro (cực chuẩn tiếng Việt), Lora (serif ấm áp), Dancing Script & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Hiệu ứng cánh hoa / hạt tim rơi toàn màn hình -->
+  <canvas id="petal-canvas" aria-hidden="true"></canvas>
+
+  <!-- Nút điều khiển âm nhạc góc phải trên -->
+  <header class="app-header">
+    <button id="music-toggle-btn" class="music-pill-btn hidden" aria-label="Bật hoặc tắt nhạc nền" type="button">
+      <span class="music-icon" aria-hidden="true">🎵</span>
+      <span class="music-text">Bật nhạc</span>
+    </button>
+  </header>
+
+  <!-- Audio element (nhạc nền tùy chọn) -->
+  <audio id="bg-audio" preload="none" loop></audio>
+
+  <!-- ============================================== -->
+  <!-- MÀN HÌNH 1: PHONG THƯ                          -->
+  <!-- ============================================== -->
+  <section id="screen-envelope" class="screen screen-envelope active" aria-label="Màn hình phong thư">
+    <div class="envelope-scene">
+      <div class="envelope-header">
+        <span class="badge-occasion" id="env-occasion">Mừng Ngày 20/10</span>
+        <h1 class="env-title" id="env-title">Gửi Mẹ yêu thương 💌</h1>
+      </div>
+
+      <!-- Khối phong thư có thể tương tác -->
+      <div id="envelope-wrapper" class="envelope-wrapper" role="button" tabindex="0" aria-label="Phong thư gửi Mẹ. Chạm vào đây để mở thư.">
+        <div class="envelope">
+          <!-- Cánh sau phong thư -->
+          <div class="env-back"></div>
+
+          <!-- Tờ giấy thư thò ra nhẹ bên trong -->
+          <div class="env-letter-peek">
+            <div class="peek-lines">
+              <span class="peek-line"></span>
+              <span class="peek-line"></span>
+              <span class="peek-line short"></span>
+            </div>
+            <span class="peek-heart">❤️</span>
+          </div>
+
+          <!-- Các cánh gấp của phong thư -->
+          <div class="env-pocket"></div>
+
+          <!-- Nắp phong thư (mở lật lên trên) -->
+          <div class="env-flap"></div>
+
+          <!-- Con dấu sáp trái tim nổi bật -->
+          <div class="env-seal" aria-hidden="true">
+            <span class="seal-icon">❤️</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hướng dẫn chạm vào thư -->
+      <div class="envelope-instruction">
+        <button id="open-envelope-btn" class="instruction-bubble" type="button">
+          <span class="bubble-sparkle">✨</span>
+          <span class="bubble-text">Chạm vào thư để mở</span>
+          <span class="bubble-sparkle">✨</span>
+        </button>
+        <p class="instruction-hint">Dành tặng Mẹ những tình cảm chân thành nhất</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- MÀN HÌNH 2: NỘI DUNG LÁ THƯ                   -->
+  <!-- ============================================== -->
+  <section id="screen-letter" class="screen screen-letter" aria-label="Lá thư gửi Mẹ" hidden>
+    <div class="letter-scroll-wrapper">
+      <div class="letter-card">
+        <!-- Nút bỏ qua hiệu ứng hiện chữ cho mẹ đọc ngay -->
+        <div class="letter-top-bar">
+          <button id="skip-animation-btn" class="text-pill-btn" type="button" aria-label="Bỏ qua hiệu ứng hiện chữ">
+            ⚡ Hiện toàn bộ
+          </button>
+        </div>
+
+        <!-- Hoa văn trang trí góc -->
+        <div class="floral-corner top-left" aria-hidden="true">🌸</div>
+        <div class="floral-corner top-right" aria-hidden="true">🌸</div>
+
+        <!-- Tiêu đề lá thư -->
+        <header class="letter-header">
+          <div class="letter-badge" id="letter-occasion-badge">20 / 10 Yêu Thương</div>
+          <h2 class="letter-greeting" id="letter-greeting">Gửi Mẹ kính yêu của con,</h2>
+        </header>
+
+        <!-- Thân bài lá thư -->
+        <div class="letter-body" id="letter-paragraphs">
+          <!-- Nội dung tải tự động từ config.json -->
+        </div>
+
+        <!-- Lời kết & Chữ ký -->
+        <footer class="letter-footer">
+          <p class="letter-closing" id="letter-closing">Con yêu Mẹ rất nhiều ❤️</p>
+          <div class="letter-signature-group">
+            <span class="letter-signature-label">Yêu Mẹ vô vàn,</span>
+            <span class="letter-signature-name" id="letter-signature">Con của Mẹ</span>
+            <span class="letter-date" id="letter-date">Ngày 20 tháng 10</span>
+          </div>
+        </footer>
+
+        <!-- Hoa văn trang trí góc dưới -->
+        <div class="floral-corner bottom-left" aria-hidden="true">🌿</div>
+        <div class="floral-corner bottom-right" aria-hidden="true">🌿</div>
+
+        <!-- Nút chuyển sang xem ảnh gia đình -->
+        <div class="letter-action-area">
+          <button id="go-to-slideshow-btn" class="primary-btn pulse-glow" type="button">
+            <span class="btn-icon">📸</span>
+            <span class="btn-text">Xem những khoảnh khắc của gia đình mình</span>
+            <span class="btn-arrow">➔</span>
+          </button>
+          <p class="btn-subtext">Cùng nhìn lại những kỷ niệm ấm áp bên Mẹ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- MÀN HÌNH 3: SLIDESHOW ẢNH GIA ĐÌNH            -->
+  <!-- ============================================== -->
+  <section id="screen-slideshow" class="screen screen-slideshow" aria-label="Bộ sưu tập ảnh gia đình" hidden>
+    <!-- Thanh điều hướng trên cùng -->
+    <nav class="slideshow-navbar" aria-label="Thanh công cụ ảnh">
+      <button id="back-to-letter-btn" class="nav-control-btn" type="button" aria-label="Quay lại đọc thư">
+        <span class="icon">💌</span>
+        <span class="text">Đọc lại thư</span>
+      </button>
+
+      <div class="photo-counter-badge" aria-live="polite">
+        <span id="current-index-display">1</span>
+        <span class="divider">/</span>
+        <span id="total-photos-display">4</span>
+      </div>
+
+      <div class="navbar-right-actions">
+        <button id="zoom-toggle-btn" class="nav-control-btn icon-only" type="button" aria-label="Phóng to ảnh" title="Phóng to / Thu nhỏ">
+          <span class="icon">🔍</span>
+        </button>
+        <button id="autoplay-toggle-btn" class="nav-control-btn" type="button" aria-label="Tự động phát ảnh">
+          <span class="icon" id="autoplay-icon">⏸</span>
+          <span class="text" id="autoplay-text">Tự động</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Khu vực hiển thị ảnh chính -->
+    <main class="slide-viewport" id="slide-viewport" role="region" aria-roledescription="carousel" aria-label="Khu vực trình chiếu ảnh">
+      <!-- Nền mờ nghệ thuật từ chính bức ảnh -->
+      <div id="slide-backdrop" class="slide-backdrop" aria-hidden="true"></div>
+
+      <!-- Khung ảnh chính chứa ảnh không bị cắt mặt -->
+      <div class="slide-stage" id="slide-stage">
+        <!-- Loading spinner -->
+        <div id="image-loading-spinner" class="loading-spinner hidden" aria-label="Đang tải ảnh...">
+          <div class="spinner-ring"></div>
+          <span class="spinner-text">Đang tải ảnh... 🌸</span>
+        </div>
+
+        <!-- Ảnh chính -->
+        <img id="main-slide-img" class="main-slide-img" src="" alt="Ảnh kỷ niệm gia đình" draggable="false">
+
+        <!-- Lớp phủ thông báo phóng to -->
+        <div id="zoom-hint-pill" class="zoom-hint-pill" aria-hidden="true">
+          Chạm để phóng to 🔍
+        </div>
+      </div>
+
+      <!-- Nút bấm chuyển ảnh to, dễ chạm trên điện thoại -->
+      <button id="prev-photo-btn" class="slide-nav-btn prev-btn" type="button" aria-label="Xem ảnh trước">
+        <span class="nav-arrow" aria-hidden="true">◀</span>
+        <span class="nav-label">Trước</span>
+      </button>
+
+      <button id="next-photo-btn" class="slide-nav-btn next-btn" type="button" aria-label="Xem ảnh kế tiếp">
+        <span class="nav-label">Tiếp</span>
+        <span class="nav-arrow" aria-hidden="true">▶</span>
+      </button>
+    </main>
+
+    <!-- Phần chân trang: Chú thích ảnh & Dấu chấm tiến trình -->
+    <footer class="slideshow-footer">
+      <!-- Chú thích ảnh (lấy từ config.json) -->
+      <div id="photo-caption-card" class="photo-caption-card">
+        <p id="photo-caption-text" class="photo-caption-text">
+          <!-- Text chú thích ảnh -->
+        </p>
+      </div>
+
+      <!-- Dấu chấm tiến trình -->
+      <div id="photo-dots-indicator" class="photo-dots-indicator" role="tablist" aria-label="Danh sách các ảnh">
+        <!-- Tạo động bằng JS -->
+      </div>
+    </footer>
+
+    <!-- Trạng thái khi không có ảnh hoặc lỗi tải -->
+    <div id="empty-photos-card" class="empty-photos-card hidden" role="alert">
+      <div class="empty-icon">🖼️</div>
+      <h3>Chưa có ảnh nào trong thư viện</h3>
+      <p>Hãy thêm ảnh vào thư mục <code>images/</code> và push lên GitHub để ảnh tự xuất hiện tại đây nhé!</p>
+      <button id="empty-back-btn" class="primary-btn" type="button">
+        Quay lại đọc thư 💌
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- MÀN HÌNH KẾT THÚC / LỜI NHẮN TRÁI TIM           -->
+  <!-- ============================================== -->
+  <aside id="modal-ending" class="modal-backdrop hidden" aria-modal="true" role="dialog" aria-labelledby="ending-title">
+    <div class="modal-card celebration-card">
+      <div class="celebration-badge">🌸 20 / 10 🌸</div>
+      <div class="celebration-heart" aria-hidden="true">💖</div>
+      <h2 id="ending-title" class="ending-title">Con yêu Mẹ rất nhiều!</h2>
+      <p id="ending-message" class="ending-message">
+        Cảm ơn Mẹ đã luôn là người Mẹ tuyệt vời nhất trên đời của chúng con. Chúc Mẹ một ngày 20/10 thật hạnh phúc và ngập tràn nụ cười!
+      </p>
+
+      <div class="ending-actions">
+        <button id="restart-slideshow-btn" class="primary-btn" type="button">
+          <span class="btn-icon">🔄</span>
+          <span class="btn-text">Xem lại ảnh từ đầu</span>
+        </button>
+        <button id="ending-read-letter-btn" class="secondary-btn" type="button">
+          <span class="btn-icon">💌</span>
+          <span class="btn-text">Đọc lại bức thư</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

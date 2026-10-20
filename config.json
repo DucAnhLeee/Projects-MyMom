@@ -1,0 +1,39 @@
+{
+  "recipientName": "Mẹ yêu",
+  "senderName": "Con của Mẹ",
+  "occasion": "Mừng Ngày Phụ Nữ Việt Nam 20/10",
+  "date": "Ngày 20 tháng 10",
+  "letter": {
+    "greeting": "Gửi Mẹ kính yêu của con,",
+    "paragraphs": [
+      "Nhân ngày Phụ nữ Việt Nam 20/10, con xin gửi đến Mẹ những lời chúc ấm áp và chân thành nhất từ tận đáy lòng con.",
+      "Cảm ơn Mẹ vì bao năm tháng qua đã luôn tần tảo, chở che và dành trọn vẹn tình yêu thương vô điều kiện cho gia đình mình. Từng bữa cơm ấm áp, từng lời dặn dò ân cần của Mẹ luôn là hành trang quý giá nhất trong cuộc đời con.",
+      "Con chỉ mong Mẹ luôn dồi dào sức khỏe, tâm hồn luôn bình an, mỗi ngày đều ngập tràn niềm vui và nụ cười rạng rỡ.",
+      "Dù đi đâu, về đâu, có Mẹ là có bến đỗ bình yên nhất!"
+    ],
+    "closing": "Con yêu Mẹ rất nhiều ❤️",
+    "signature": "Con của Mẹ"
+  },
+  "slideshow": {
+    "autoPlay": true,
+    "intervalMs": 5000,
+    "heading": "Khoảnh khắc gia đình"
+  },
+  "audio": {
+    "enabled": true,
+    "src": "audio/nhac-tang-me.mp3",
+    "title": "Giai điệu dịu êm"
+  },
+  "captions": {
+    "01-gia-dinh-hanh-phuc.svg": "Nụ cười của Mẹ là niềm hạnh phúc lớn nhất của cả nhà 🌸",
+    "02-me-va-con.svg": "Cảm ơn Mẹ vì đã luôn dịu dàng bên con từng bước đi ❤️",
+    "03-ky-niem-am-ap.svg": "Gia đình mình luôn đong đầy yêu thương nhờ có Mẹ 🌼",
+    "04-chuc-mung-20-10.svg": "Chúc Mẹ của con mãi luôn mạnh khỏe, an vui và rạng rỡ! ✨"
+  },
+  "ending": {
+    "title": "Con yêu Mẹ rất nhiều ❤️",
+    "message": "Cảm ơn Mẹ đã luôn là người Mẹ tuyệt vời nhất của con. Chúc Mẹ một ngày 20/10 thật hạnh phúc và ngập tràn yêu thương!",
+    "buttonRestart": "Xem lại từ đầu 🔄",
+    "buttonLetter": "Đọc lại thư 💌"
+  }
+}

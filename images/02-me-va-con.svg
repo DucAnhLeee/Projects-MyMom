@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="1000" height="1200">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F3" />
+      <stop offset="60%" stop-color="#FFE5EC" />
+      <stop offset="100%" stop-color="#FFD6DF" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F72585" />
+      <stop offset="100%" stop-color="#B5179E" />
+    </linearGradient>
+    <filter id="softShadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7209B7" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1200" fill="url(#bgGrad2)" />
+
+  <circle cx="800" cy="180" r="190" fill="#FFF8F9" opacity="0.7" />
+  <circle cx="150" cy="350" r="180" fill="#FFE0E9" opacity="0.8" />
+  <circle cx="850" cy="1000" r="220" fill="#FFCCD5" opacity="0.6" />
+
+  <!-- Main Card -->
+  <rect x="100" y="140" width="800" height="920" rx="40" fill="#FFFFFF" filter="url(#softShadow2)" />
+  <rect x="120" y="160" width="760" height="880" rx="30" fill="none" stroke="#F8A5C2" stroke-width="3" stroke-dasharray="10 8" />
+
+  <!-- Center Graphic: Mother holding child symbol -->
+  <g transform="translate(500, 470)">
+    <circle cx="0" cy="0" r="170" fill="#FFF0F5" stroke="#F9C7D4" stroke-width="4" />
+
+    <!-- Stylized Mother Silhouette -->
+    <!-- Mother Head -->
+    <circle cx="-30" cy="-60" r="42" fill="#E05780" />
+    <!-- Child Head -->
+    <circle cx="45" cy="-25" r="32" fill="#FF8FAB" />
+    <!-- Embracing Bodies Arc -->
+    <path d="M -90,70 C -90,-20 -60,-40 -10,-40 C 20,-40 60,-20 80,0 C 95,20 100,50 95,70 C 60,95 -50,95 -90,70 Z" fill="#F47298" opacity="0.9" />
+    <!-- Gentle Loving Heart between them -->
+    <path d="M 10,-80 C 0,-100 -20,-100 -20,-85 C -20,-75 -5,-65 10,-55 C 25,-65 40,-75 40,-85 C 40,-100 20,-100 10,-80 Z" fill="#D81B60" />
+  </g>
+
+  <!-- Title & Typography -->
+  <text x="500" y="780" font-family="'Playfair Display', serif, sans-serif" font-size="44" font-weight="bold" fill="#8C1D2F" text-anchor="middle">
+    Bên Mẹ Bình Yên
+  </text>
+  <text x="500" y="840" font-family="'Be Vietnam Pro', sans-serif" font-size="28" fill="#6A3B43" text-anchor="middle">
+    Tình yêu thương của Mẹ là bến đỗ bình yên nhất
+  </text>
+  <text x="500" y="900" font-family="'Be Vietnam Pro', sans-serif" font-size="22" font-style="italic" fill="#99626A" text-anchor="middle">
+    (Ảnh mẫu minh họa - Thay thế bằng ảnh kỷ niệm cùng Mẹ)
+  </text>
+  <text x="500" y="990" font-family="'Be Vietnam Pro', sans-serif" font-size="20" fill="#B38088" text-anchor="middle">
+    Yêu Mẹ Vô Vàn 💖
+  </text>
+</svg>

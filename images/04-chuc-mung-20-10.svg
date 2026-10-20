@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="1000" height="1200">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEBF0" />
+      <stop offset="50%" stop-color="#FFF0F5" />
+      <stop offset="100%" stop-color="#FFDEE9" />
+    </linearGradient>
+    <filter id="softShadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#B8283B" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1200" fill="url(#bgGrad4)" />
+
+  <circle cx="200" cy="180" r="160" fill="#FFF9FA" opacity="0.8" />
+  <circle cx="850" cy="280" r="190" fill="#FFD8E2" opacity="0.7" />
+  <circle cx="150" cy="1000" r="210" fill="#FFCCD7" opacity="0.6" />
+
+  <!-- Main Card -->
+  <rect x="100" y="140" width="800" height="920" rx="40" fill="#FFFFFF" filter="url(#softShadow4)" />
+  <rect x="120" y="160" width="760" height="880" rx="30" fill="none" stroke="#E58A99" stroke-width="3" stroke-dasharray="10 8" />
+
+  <!-- Center Graphic: Flower Bouquet -->
+  <g transform="translate(500, 460)">
+    <circle cx="0" cy="0" r="170" fill="#FFF2F4" stroke="#FDC7CE" stroke-width="4" />
+
+    <!-- Bouquet Leaves -->
+    <path d="M -70,-30 C -120,-80 -90,-140 -40,-110 C -40,-110 -50,-50 -70,-30 Z" fill="#6DA34D" opacity="0.8" />
+    <path d="M 70,-30 C 120,-80 90,-140 40,-110 C 40,-110 50,-50 70,-30 Z" fill="#6DA34D" opacity="0.8" />
+    <path d="M 0,-70 C 0,-140 40,-130 0,-160 C -40,-130 0,-140 0,-70 Z" fill="#528734" opacity="0.8" />
+
+    <!-- Flower 1 (Center Rose) -->
+    <circle cx="0" cy="-20" r="48" fill="#E63946" />
+    <circle cx="-12" cy="-25" r="28" fill="#F05D6B" opacity="0.7" />
+    <circle cx="12" cy="-25" r="28" fill="#F05D6B" opacity="0.7" />
+    <circle cx="0" cy="-15" r="18" fill="#FF8C96" />
+
+    <!-- Flower 2 (Left) -->
+    <circle cx="-65" cy="20" r="38" fill="#FF6B8B" />
+    <circle cx="-65" cy="20" r="18" fill="#FFB3C1" />
+
+    <!-- Flower 3 (Right) -->
+    <circle cx="65" cy="20" r="38" fill="#F77F00" />
+    <circle cx="65" cy="20" r="18" fill="#FCBF49" />
+
+    <!-- Wrapping paper cone / ribbon -->
+    <path d="M -50,60 L 0,140 L 50,60 Z" fill="#DDBEA9" />
+    <path d="M -30,80 L 30,80" stroke="#CB997E" stroke-width="6" />
+    <circle cx="0" cy="75" r="14" fill="#E63946" />
+    <!-- Ribbon bows -->
+    <path d="M 0,75 C -30,65 -40,90 -20,95 C -10,95 0,75 0,75 Z" fill="#E63946" />
+    <path d="M 0,75 C 30,65 40,90 20,95 C 10,95 0,75 0,75 Z" fill="#E63946" />
+  </g>
+
+  <!-- Title & Typography -->
+  <text x="500" y="780" font-family="'Playfair Display', serif, sans-serif" font-size="44" font-weight="bold" fill="#8C1D2F" text-anchor="middle">
+    Chúc Mừng Ngày 20/10
+  </text>
+  <text x="500" y="840" font-family="'Be Vietnam Pro', sans-serif" font-size="28" fill="#6A3B43" text-anchor="middle">
+    Kính chúc Mẹ luôn dồi dào sức khỏe và ngập tràn niềm vui
+  </text>
+  <text x="500" y="900" font-family="'Be Vietnam Pro', sans-serif" font-size="22" font-style="italic" fill="#99626A" text-anchor="middle">
+    (Bó hoa tươi thắm kính dâng Mẹ yêu)
+  </text>
+  <text x="500" y="990" font-family="'Be Vietnam Pro', sans-serif" font-size="22" font-weight="bold" fill="#B8283B" text-anchor="middle">
+    Mãi Yêu Mẹ Của Con 🌸
+  </text>
+</svg>
