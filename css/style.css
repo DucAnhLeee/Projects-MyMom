@@ -922,6 +922,22 @@ body {
   background: rgba(212, 175, 55, 0.18);
 }
 
+/* Lưới nhiều ảnh trong 1 mốc (Ví dụ Mốc 2016 có 2 ảnh của Mẹ) */
+.timeline-multi-img-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.timeline-multi-img-grid .timeline-img-wrap {
+  margin-bottom: 0;
+}
+
+.timeline-multi-img-grid .timeline-img {
+  max-height: 320px;
+}
+
 /* Khung chứa ảnh - Đảm bảo KHÔNG cắt mất mặt người */
 .timeline-img-wrap {
   position: relative;

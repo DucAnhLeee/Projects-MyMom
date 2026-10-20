@@ -11,16 +11,16 @@
   // =========================================================================
   const DEFAULT_CONFIG = {
     recipientName: "Mẹ yêu",
-    senderName: "Con của Mẹ",
+    senderName: "Con của Mẹ (sinh năm 2006)",
     occasion: "Mừng Ngày Phụ Nữ Việt Nam 20/10",
-    date: "Ngày 20 tháng 10",
+    date: "Ngày 20 tháng 10 năm 2026",
     letter: {
       greeting: "Gửi Mẹ kính yêu của con,",
       paragraphs: [
-        "Nhân ngày Phụ nữ Việt Nam 20/10, con xin gửi đến Mẹ những lời chúc ấm áp và chân thành nhất từ tận đáy lòng con.",
-        "Thời gian có thể trôi qua, vạn vật có thể đổi thay, nhưng tình yêu thương và sự hy sinh bao la của Mẹ dành cho gia đình luôn là điều thiêng liêng nhất.",
-        "Hôm nay, con muốn cùng Mẹ mở lại cuốn phim thời gian, nhìn lại những năm tháng thanh xuân tuyệt đẹp và chặng đường mà Mẹ đã đi qua...",
-        "Chúc Mẹ của con luôn dồi dào sức khỏe, an yên và ngập tràn nụ cười rạng rỡ!"
+        "Nhân ngày Phụ nữ Việt Nam 20/10, con xin gửi đến Mẹ những lời chúc ấm áp nhất và lòng biết ơn sâu sắc từ tận đáy lòng con.",
+        "Con sinh năm 2006, thấm thoát năm nay con đã tròn 20 tuổi. Suốt 20 năm qua, từng bữa cơm ấm áp, từng lời dặn dò ân cần của Mẹ luôn là hành trang quý giá nhất giúp con khôn lớn nên người.",
+        "Hôm nay, con muốn cùng Mẹ mở lại cuốn phim thời gian ghi dấu 10 năm qua (từ 2016 đến nay). Nhìn lại từng chặng đường hai mẹ con mình đi qua, con càng thấu hiểu và trân trọng hơn bao hy sinh, tần tảo thầm lặng của Mẹ.",
+        "Con đã lớn khôn rồi Mẹ nhé, từ nay hãy để con trở thành điểm tựa vững chãi và mang lại thật nhiều niềm vui cho Mẹ!"
       ],
       closing: "Con yêu Mẹ rất nhiều ❤️",
       signature: "Con của Mẹ"
@@ -31,61 +31,62 @@
       title: "Giai điệu tặng Mẹ"
     },
     timelineTitle: "Ngày ấy – Bây giờ",
-    timelineSubtitle: "Chặng đường yêu thương và những dấu ấn vô giá của Mẹ",
+    timelineSubtitle: "Hành trình 10 năm yêu thương: Từ ngày con 10 tuổi (2016) đến khi con 20 tuổi (2026)",
     timeline: [
       {
-        image: "images/01.jpg",
-        year: "1992",
-        stage: "Thuở thanh xuân",
-        title: "Nụ cười rạng rỡ tuổi đôi mươi",
-        caption: "Mẹ của những năm tháng thanh xuân tươi đẹp nhất. Đôi mắt sáng, nụ cười hồn nhiên và trái tim trong trẻo luôn sưởi ấm mọi ánh nhìn."
+        images: ["images/01a.jpg", "images/01b.jpg"],
+        image: "images/01a.jpg",
+        year: "2016",
+        stage: "Tuổi thơ bên Mẹ (Con 10 tuổi)",
+        title: "Nét dịu hiền của Mẹ",
+        caption: "Năm 2016 khi con tròn 10 tuổi. Trong ký ức tuổi thơ của con, Mẹ luôn là người phụ nữ đẹp nhất, nụ cười hiền hậu và bàn tay Mẹ luôn ấp ôm, chăm lo cho con từng chút một."
       },
       {
         image: "images/02.jpg",
-        year: "1996",
-        stage: "Ngày cưới hạnh phúc",
-        title: "Khoảnh khắc xây đắp tổ ấm",
-        caption: "Ngày Mẹ rạng ngời trong tà áo cô dâu, cùng Ba bắt đầu chặng đường xây đắp một mái ấm gia đình bình yên và hạnh phúc."
+        year: "2018",
+        stage: "Con 12 tuổi",
+        title: "Khoảnh khắc hai Mẹ con",
+        caption: "Năm 2018, con bước vào tuổi thiếu niên với bao điều mới lạ. Đứng bên Mẹ, con dần cảm nhận được bờ vai Mẹ đã vì con mà gánh vác bao lo toan thường nhật."
       },
       {
         image: "images/03.jpg",
-        year: "1999",
-        stage: "Khi con chào đời",
-        title: "Vòng tay chở che đầu tiên",
-        caption: "Lần đầu tiên được ôm thiên thần nhỏ vào lòng, ánh mắt Mẹ ngập tràn yêu thương và những giọt nước mắt hạnh phúc thiêng liêng."
+        year: "2020",
+        stage: "Con 14 tuổi",
+        title: "Điểm tựa bình yên nhất",
+        caption: "Năm 2020, những năm tháng học trò nhiều bỡ ngỡ. Dù cuộc sống ngoài kia có bao biến động, trở về bên Mẹ con luôn tìm thấy sự bình yên và ấm áp nhất."
       },
       {
         image: "images/04.jpg",
-        year: "2008",
-        stage: "Những năm tháng vì con",
-        title: "Tần tảo sớm hôm",
-        caption: "Bao mùa nắng mưa Mẹ thức khuya dậy sớm, lo cho con từng bữa ăn, manh áo, chắp cánh cho con từng bước đi khôn lớn vào đời."
+        year: "2021",
+        stage: "Con 15 tuổi",
+        title: "Con dần khôn lớn",
+        caption: "Năm 2021, con bước vào cấp 3 và bắt đầu cao lớn hơn Mẹ. Nhưng dù con có lớn đến đâu, trong ánh mắt dịu dàng của Mẹ, con vẫn mãi là đứa con bé bỏng ngày nào."
       },
       {
         image: "images/05.jpg",
-        year: "2018",
-        stage: "Gia đình sum vầy",
-        title: "Mái ấm đong đầy yêu thương",
-        caption: "Trải qua bao thăng trầm cuộc sống, nụ cười của Mẹ vẫn luôn là ngọn hải đăng và là bến đỗ bình yên nhất mà cả nhà luôn tìm về."
+        year: "2025",
+        stage: "Con 19 tuổi",
+        title: "Hành trang bước vào đời",
+        caption: "Năm 2025, con 19 tuổi bước những bước đi vững chãi đầu tiên vào đời. Hành trang quý giá nhất con mang theo chính là tình thương bao la và niềm tin Mẹ trao cho con."
       },
       {
         image: "images/06.jpg",
         year: "BÂY GIỜ",
-        stage: "BÂY GIỜ",
-        title: "Mẹ mãi là điều tuyệt vời nhất",
-        caption: "Dù mái tóc Mẹ đã điểm thêm sợi bạc theo năm tháng, với chúng con, Mẹ vẫn luôn là người phụ nữ đẹp nhất, vĩ đại và bao dung nhất trần đời! ❤️"
+        stage: "BÂY GIỜ (2026 - Con 20 tuổi)",
+        title: "Con đã lớn, để con là điểm tựa của Mẹ! ❤️",
+        caption: "Năm 2026 - Con tròn 20 tuổi! Cảm ơn Mẹ đã dành trọn 20 năm thanh xuân vì con. Giờ đây con đã trưởng thành, con chỉ mong Mẹ luôn mạnh khỏe, an yên và mãi nở nụ cười rạng rỡ!"
       }
     ],
     comparison: {
       buttonText: "Ngày ấy ⇄ Bây giờ",
       title: "Ngày ấy & Bây giờ",
-      subtitle: "Thời gian trôi qua, nhưng tình yêu thương của Mẹ vẫn vẹn nguyên như thuở ban đầu",
-      labelBefore: "Ngày ấy",
-      labelAfter: "Bây giờ"
+      subtitle: "Hành trình 10 năm (2016 – 2026): Con đã lớn khôn, và Mẹ vẫn mãi là người phụ nữ tuyệt vời nhất đời con!",
+      labelBefore: "Năm 2016",
+      labelAfter: "Bây giờ (2026)"
     },
     ending: {
       title: "Con yêu Mẹ rất nhiều ❤️",
-      message: "Cảm ơn Mẹ đã luôn là người Mẹ tuyệt vời nhất trên đời của chúng con. Chúc Mẹ một ngày 20/10 thật hạnh phúc, mạnh khỏe và luôn rạng ngời nụ cười!",
+      message: "Cảm ơn Mẹ vì 20 năm qua đã luôn là người Mẹ tuyệt vời nhất của con. Chúc Mẹ ngày 20/10 ngập tràn niềm vui, dồi dào sức khỏe và luôn hạnh phúc!",
       buttonRestart: "Xem lại từ đầu 🔄",
       buttonLetter: "Đọc lại thư 💌"
     }
@@ -590,53 +591,78 @@
       headerBadge.appendChild(stageTag);
       cardEl.appendChild(headerBadge);
 
-      // Khung chứa ảnh
-      const imgWrap = document.createElement('div');
-      imgWrap.className = 'timeline-img-wrap';
-      imgWrap.setAttribute('role', 'button');
-      imgWrap.setAttribute('tabindex', '0');
-      imgWrap.setAttribute('aria-label', `Xem ảnh phóng to: ${item.title || item.stage}`);
+      // Xác định danh sách ảnh của mốc (Hỗ trợ 1 ảnh hoặc nhiều ảnh, vd: 2016 có 2 ảnh của Mẹ)
+      const photoList = Array.isArray(item.images) && item.images.length > 0 
+        ? item.images 
+        : (item.image ? [item.image] : []);
 
-      const img = document.createElement('img');
-      img.className = 'timeline-img';
-      img.src = item.image;
-      img.alt = item.title || `Ảnh kỷ niệm ${item.year}`;
-      // Lazy-load từ mốc thứ 2 trở đi
-      if (!isFirst) {
-        img.loading = 'lazy';
+      function createImgWrap(imgSrc, subIndex, totalSub) {
+        const wrap = document.createElement('div');
+        wrap.className = 'timeline-img-wrap';
+        wrap.setAttribute('role', 'button');
+        wrap.setAttribute('tabindex', '0');
+        const photoLabel = totalSub > 1 
+          ? `${item.title || item.stage} (Ảnh ${subIndex + 1}/${totalSub})`
+          : (item.title || item.stage);
+        wrap.setAttribute('aria-label', `Xem ảnh phóng to: ${photoLabel}`);
+
+        const img = document.createElement('img');
+        img.className = 'timeline-img';
+        img.src = imgSrc;
+        img.alt = photoLabel;
+        if (!isFirst) {
+          img.loading = 'lazy';
+        }
+
+        img.onerror = function () {
+          this.style.display = 'none';
+          const fallbackBox = document.createElement('div');
+          fallbackBox.className = 'img-fallback-box';
+          fallbackBox.innerHTML = `
+            <span class="fallback-icon">📷</span>
+            <span class="fallback-title">${item.stage} (${item.year})</span>
+            <span class="fallback-sub">${totalSub > 1 ? `Ảnh ${subIndex + 1}` : 'Hình ảnh kỷ niệm'}</span>
+          `;
+          wrap.appendChild(fallbackBox);
+        };
+
+        const hintPill = document.createElement('div');
+        hintPill.className = 'img-zoom-hint';
+        hintPill.innerHTML = `🔍 Chạm phóng to`;
+
+        wrap.appendChild(img);
+        wrap.appendChild(hintPill);
+
+        const openHandler = () => {
+          openLightbox({
+            ...item,
+            image: imgSrc,
+            title: totalSub > 1 ? `${item.title} (Ảnh ${subIndex + 1})` : item.title
+          });
+        };
+        wrap.addEventListener('click', openHandler);
+        wrap.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openHandler();
+          }
+        });
+
+        return wrap;
       }
 
-      // Xử lý lỗi tải ảnh: Hiện thẻ placeholder đẹp mắt, không để ô trống
-      img.onerror = function () {
-        this.style.display = 'none';
-        const fallbackBox = document.createElement('div');
-        fallbackBox.className = 'img-fallback-box';
-        fallbackBox.innerHTML = `
-          <span class="fallback-icon">📷</span>
-          <span class="fallback-title">${item.stage} (${item.year})</span>
-          <span class="fallback-sub">Hình ảnh kỷ niệm của Mẹ</span>
-        `;
-        imgWrap.appendChild(fallbackBox);
-      };
-
-      const hintPill = document.createElement('div');
-      hintPill.className = 'img-zoom-hint';
-      hintPill.innerHTML = `🔍 Chạm phóng to`;
-
-      imgWrap.appendChild(img);
-      imgWrap.appendChild(hintPill);
-
-      // Nhấn vào ảnh để xem phóng to
-      const openLightboxHandler = () => openLightbox(item);
-      imgWrap.addEventListener('click', openLightboxHandler);
-      imgWrap.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          openLightboxHandler();
-        }
-      });
-
-      cardEl.appendChild(imgWrap);
+      if (photoList.length > 1) {
+        // Nhiều ảnh trong 1 mốc (Hiển thị dạng lưới đẹp mắt)
+        const multiGrid = document.createElement('div');
+        multiGrid.className = 'timeline-multi-img-grid';
+        photoList.forEach((src, idx) => {
+          multiGrid.appendChild(createImgWrap(src, idx, photoList.length));
+        });
+        cardEl.appendChild(multiGrid);
+      } else if (photoList.length === 1) {
+        // 1 ảnh đơn
+        cardEl.appendChild(createImgWrap(photoList[0], 0, 1));
+      }
 
       // Tiêu đề & Lời kể
       if (item.title) {
@@ -657,7 +683,6 @@
       dom.timelineItemsList.appendChild(itemEl);
     });
 
-    // Cài đặt dữ liệu cho bộ so sánh
     setupComparisonData();
   }
 
@@ -770,16 +795,26 @@
 
     const firstItem = timeline[0];
     const lastItem = timeline[timeline.length - 1];
+    const comparisonConfig = state.config.comparison || {};
+
+    const firstImg = (Array.isArray(firstItem.images) && firstItem.images[0]) || firstItem.image;
+    const lastImg = (Array.isArray(lastItem.images) && lastItem.images[lastItem.images.length - 1]) || lastItem.image;
 
     // Cập nhật ảnh cho bộ so sánh
-    dom.compareBeforeImg.src = firstItem.image;
-    dom.compareAfterImg.src = lastItem.image;
-    dom.compareBeforeLabel.textContent = `Ngày ấy (${firstItem.year})`;
-    dom.compareAfterLabel.textContent = 'Bây giờ';
+    dom.compareBeforeImg.src = firstImg;
+    dom.compareAfterImg.src = lastImg;
+    dom.compareBeforeLabel.textContent = comparisonConfig.labelBefore || `Ngày ấy (${firstItem.year})`;
+    dom.compareAfterLabel.textContent = comparisonConfig.labelAfter || 'Bây giờ';
+
+    // Cập nhật tiêu đề & lời giải thích của modal so sánh nếu có trong config
+    const modalTitle = dom.compareModal.querySelector('.compare-title');
+    const modalSub = dom.compareModal.querySelector('.compare-sub');
+    if (modalTitle && comparisonConfig.title) modalTitle.textContent = comparisonConfig.title;
+    if (modalSub && comparisonConfig.subtitle) modalSub.textContent = comparisonConfig.subtitle;
 
     // Cập nhật ảnh cho chế độ 2 ảnh cạnh nhau
-    dom.sideBeforeImg.src = firstItem.image;
-    dom.sideAfterImg.src = lastItem.image;
+    dom.sideBeforeImg.src = firstImg;
+    dom.sideAfterImg.src = lastImg;
     dom.sideBeforeYear.textContent = `${firstItem.stage} (${firstItem.year})`;
     dom.sideAfterYear.textContent = `${lastItem.stage} (Hiện tại)`;
 
@@ -931,3 +966,4 @@
     init();
   }
 })();
+
