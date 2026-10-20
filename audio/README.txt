@@ -23,3 +23,4 @@
    - Các trình duyệt trên điện thoại (Safari iPhone, Chrome Android) luôn chặn nhạc tự động phát có âm thanh để tránh làm phiền người dùng.
    - Do đó, trang web được thiết kế một nút "Bật nhạc 🎵" trang nhã ở góc trên màn hình. Mẹ có thể bấm vào bất kỳ lúc nào để thưởng thức.
    - NẾU BẠN CHƯA BỎ FILE NHẠC VÀO: Nút nhạc sẽ tự động ẩn đi, không gây lỗi giao diện.
+

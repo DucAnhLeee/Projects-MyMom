@@ -7,32 +7,74 @@
     "greeting": "Gửi Mẹ kính yêu của con,",
     "paragraphs": [
       "Nhân ngày Phụ nữ Việt Nam 20/10, con xin gửi đến Mẹ những lời chúc ấm áp và chân thành nhất từ tận đáy lòng con.",
-      "Cảm ơn Mẹ vì bao năm tháng qua đã luôn tần tảo, chở che và dành trọn vẹn tình yêu thương vô điều kiện cho gia đình mình. Từng bữa cơm ấm áp, từng lời dặn dò ân cần của Mẹ luôn là hành trang quý giá nhất trong cuộc đời con.",
-      "Con chỉ mong Mẹ luôn dồi dào sức khỏe, tâm hồn luôn bình an, mỗi ngày đều ngập tràn niềm vui và nụ cười rạng rỡ.",
-      "Dù đi đâu, về đâu, có Mẹ là có bến đỗ bình yên nhất!"
+      "Thời gian có thể trôi qua, vạn vật có thể đổi thay, nhưng tình yêu thương và sự hy sinh bao la của Mẹ dành cho gia đình luôn là điều thiêng liêng nhất.",
+      "Hôm nay, con muốn cùng Mẹ mở lại cuốn phim thời gian, nhìn lại những năm tháng thanh xuân tuyệt đẹp và chặng đường mà Mẹ đã đi qua...",
+      "Chúc Mẹ của con luôn dồi dào sức khỏe, an yên và ngập tràn nụ cười rạng rỡ!"
     ],
     "closing": "Con yêu Mẹ rất nhiều ❤️",
     "signature": "Con của Mẹ"
   },
-  "slideshow": {
-    "autoPlay": true,
-    "intervalMs": 5000,
-    "heading": "Khoảnh khắc gia đình"
-  },
   "audio": {
     "enabled": true,
     "src": "audio/nhac-tang-me.mp3",
-    "title": "Giai điệu dịu êm"
+    "title": "Giai điệu tặng Mẹ"
   },
-  "captions": {
-    "01-gia-dinh-hanh-phuc.svg": "Nụ cười của Mẹ là niềm hạnh phúc lớn nhất của cả nhà 🌸",
-    "02-me-va-con.svg": "Cảm ơn Mẹ vì đã luôn dịu dàng bên con từng bước đi ❤️",
-    "03-ky-niem-am-ap.svg": "Gia đình mình luôn đong đầy yêu thương nhờ có Mẹ 🌼",
-    "04-chuc-mung-20-10.svg": "Chúc Mẹ của con mãi luôn mạnh khỏe, an vui và rạng rỡ! ✨"
+  "timelineTitle": "Ngày ấy – Bây giờ",
+  "timelineSubtitle": "Chặng đường yêu thương và những dấu ấn vô giá của Mẹ",
+  "timeline": [
+    {
+      "image": "images/01.jpg",
+      "year": "1992",
+      "stage": "Thuở thanh xuân",
+      "title": "Nụ cười rạng rỡ tuổi đôi mươi",
+      "caption": "Mẹ của những năm tháng thanh xuân tươi đẹp nhất. Đôi mắt sáng, nụ cười hồn nhiên và trái tim trong trẻo luôn sưởi ấm mọi ánh nhìn."
+    },
+    {
+      "image": "images/02.jpg",
+      "year": "1996",
+      "stage": "Ngày cưới hạnh phúc",
+      "title": "Khoảnh khắc xây đắp tổ ấm",
+      "caption": "Ngày Mẹ rạng ngời trong tà áo cô dâu, cùng Ba bắt đầu chặng đường xây đắp một mái ấm gia đình bình yên và hạnh phúc."
+    },
+    {
+      "image": "images/03.jpg",
+      "year": "1999",
+      "stage": "Khi con chào đời",
+      "title": "Vòng tay chở che đầu tiên",
+      "caption": "Lần đầu tiên được ôm thiên thần nhỏ vào lòng, ánh mắt Mẹ ngập tràn yêu thương và những giọt nước mắt hạnh phúc thiêng liêng."
+    },
+    {
+      "image": "images/04.jpg",
+      "year": "2008",
+      "stage": "Những năm tháng vì con",
+      "title": "Tần tảo sớm hôm",
+      "caption": "Bao mùa nắng mưa Mẹ thức khuya dậy sớm, lo cho con từng bữa ăn, manh áo, chắp cánh cho con từng bước đi khôn lớn vào đời."
+    },
+    {
+      "image": "images/05.jpg",
+      "year": "2018",
+      "stage": "Gia đình sum vầy",
+      "title": "Mái ấm đong đầy yêu thương",
+      "caption": "Trải qua bao thăng trầm cuộc sống, nụ cười của Mẹ vẫn luôn là ngọn hải đăng và là bến đỗ bình yên nhất mà cả nhà luôn tìm về."
+    },
+    {
+      "image": "images/06.jpg",
+      "year": "BÂY GIỜ",
+      "stage": "BÂY GIỜ",
+      "title": "Mẹ mãi là điều tuyệt vời nhất",
+      "caption": "Dù mái tóc Mẹ đã điểm thêm sợi bạc theo năm tháng, với chúng con, Mẹ vẫn luôn là người phụ nữ đẹp nhất, vĩ đại và bao dung nhất trần đời! ❤️"
+    }
+  ],
+  "comparison": {
+    "buttonText": "Ngày ấy ⇄ Bây giờ",
+    "title": "Ngày ấy & Bây giờ",
+    "subtitle": "Thời gian trôi qua, nhưng tình yêu thương của Mẹ vẫn vẹn nguyên như thuở ban đầu",
+    "labelBefore": "Ngày ấy",
+    "labelAfter": "Bây giờ"
   },
   "ending": {
     "title": "Con yêu Mẹ rất nhiều ❤️",
-    "message": "Cảm ơn Mẹ đã luôn là người Mẹ tuyệt vời nhất của con. Chúc Mẹ một ngày 20/10 thật hạnh phúc và ngập tràn yêu thương!",
+    "message": "Cảm ơn Mẹ đã luôn là người Mẹ tuyệt vời nhất trên đời của chúng con. Chúc Mẹ một ngày 20/10 thật hạnh phúc, mạnh khỏe và luôn rạng ngời nụ cười!",
     "buttonRestart": "Xem lại từ đầu 🔄",
     "buttonLetter": "Đọc lại thư 💌"
   }

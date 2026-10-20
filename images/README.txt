@@ -1,42 +1,31 @@
-===========================================================
-  HƯỚNG DẪN THÊM ẢNH GIA ĐÌNH VÀO DỰ ÁN (THƯ MỤC /images)
-===========================================================
+========================================================================
+  HƯỚNG DẪN THAY 6 ẢNH DÒNG THỜI GIAN "NGÀY ẤY – BÂY GIỜ" (/images)
+========================================================================
 
-1. CÁCH THÊM ẢNH:
-   - Bạn chỉ cần copy/paste ảnh của gia đình vào thư mục này (`images/`).
-   - Nếu dùng GitHub trên trình duyệt: Vào thư mục `images` trên repo -> bấm nút "Add file" -> "Upload files" -> Kéo thả ảnh vào rồi bấm "Commit changes".
-   - GitHub Actions sẽ TỰ ĐỘNG quét tất cả ảnh và đưa vào slideshow, bạn KHÔNG cần sửa bất kỳ dòng code nào!
+1. CÁCH THAY ẢNH CỰC KỲ ĐƠN GIẢN:
+   - Thư mục này chứa đúng 6 bức ảnh tượng trưng cho 6 mốc thời gian quan trọng của Mẹ.
+   - Bạn chỉ cần chuẩn bị 6 bức ảnh kỷ niệm thật của gia đình, đổi tên file thành:
+       01.jpg   → (Mốc 1: Thuở thanh xuân)
+       02.jpg   → (Mốc 2: Ngày cưới hạnh phúc)
+       03.jpg   → (Mốc 3: Khi con chào đời)
+       04.jpg   → (Mốc 4: Những năm tháng vất vả vì con)
+       05.jpg   → (Mốc 5: Gia đình sum vầy)
+       06.jpg   → (Mốc 6: BÂY GIỜ - Hiện tại)
+   - Sau đó chép đè (replace) vào thư mục này là xong! Không cần sửa code gì cả.
 
-2. CÁC ĐỊNH DẠNG HỖ TRỢ:
-   - .jpg, .jpeg, .png, .webp, .svg, .gif
-   - Lưu ý: Ảnh chụp từ iPhone có đuôi .heic hoặc .heif thì vui lòng đổi sang .jpg trước khi bỏ vào để mọi điện thoại đều xem được nhé.
+2. CÁCH UPLOAD TRỰC TIẾP TRÊN TRÌNH DUYỆT GITHUB (KHÔNG CẦN CÀI GIT):
+   - Mở repo GitHub của bạn trên trình duyệt.
+   - Bấm vào thư mục `images`.
+   - Bấm nút "Add file" ở góc phải → chọn "Upload files".
+   - Kéo 6 file ảnh (01.jpg đến 06.jpg) vào rồi bấm nút "Commit changes".
+   - GitHub sẽ tự cập nhật trang web sau 1 phút!
 
-3. ĐẶT TÊN FILE ĐỂ SẮP XẾP THỨ TỰ:
-   - Hệ thống sẽ hiển thị ảnh theo thứ tự tên file từ A đến Z.
-   - Bạn nên đặt tên ảnh có số thứ tự ở đầu, ví dụ:
-     01-gia-dinh.jpg
-     02-me-va-con.jpg
-     03-ba-me-du-lich.jpg
-     04-chuc-mung-me.jpg
+3. ĐỊNH DẠNG & DUNG LƯỢNG KHUYẾN NGHỊ:
+   - Định dạng: .jpg (hoặc .jpeg, .png).
+   - Nếu chụp bằng iPhone có đuôi .heic, hãy đổi sang .jpg trước khi tải lên.
+   - Kích thước: Cạnh dài khoảng 1000px - 1600px là cực nét trên mọi điện thoại.
+   - Dung lượng: Dưới 500 KB mỗi ảnh để Mẹ mở xem bằng 4G cực nhanh, không phải chờ đợi.
+   - Nén ảnh miễn phí nhanh tại: https://tinypng.com/ hoặc https://squoosh.app/
 
-4. KÍCH THƯỚC VÀ DUNG LƯỢNG KHUYẾN NGHỊ:
-   - Cạnh dài nhất của ảnh: khoảng 1200px - 1600px là cực kỳ nét trên điện thoại.
-   - Dung lượng mỗi ảnh: dưới 500 KB (hoặc dưới 1 MB) để mẹ mở bằng 4G tải vù vù, không bị chậm.
-   - Bạn có thể nén ảnh miễn phí nhanh chóng tại: https://tinypng.com/ hoặc https://squoosh.app/
-
-5. THÊM CHÚ THÍCH DƯỚI TỪNG BỨC ẢNH (TÙY CHỌN):
-   - Mở file `config.json` ở thư mục gốc.
-   - Trong mục "captions", điền tên file ảnh và câu chú thích tương ứng, ví dụ:
-     "captions": {
-       "01-gia-dinh.jpg": "Cả nhà mình đi chơi Đà Lạt 🌸",
-       "02-me-va-con.jpg": "Khoảnh khắc tuyệt vời bên Mẹ yêu ❤️"
-     }
-   - Nếu ảnh nào không có chú thích, hệ thống sẽ tự động không hiển thị chữ, chỉ hiện ảnh trọn vẹn.
-
-6. XÓA ẢNH MẪU MINH HỌA:
-   - Khi bạn đã có ảnh thật của gia đình, bạn có thể xóa các file:
-     01-gia-dinh-hanh-phuc.svg
-     02-me-va-con.svg
-     03-ky-niem-am-ap.svg
-     04-chuc-mung-20-10.svg
-   - Sau đó push lên GitHub, trang web sẽ chỉ hiển thị ảnh của gia đình bạn!
+4. CHỈNH SỬA LỜI KỂ & NĂM CHO TỪNG MỐC:
+   - Mở file `config.json` ở thư mục gốc để sửa lại năm (year), tên giai đoạn (stage), tiêu đề (title) và lời kể yêu thương (caption) cho từng mốc ảnh.

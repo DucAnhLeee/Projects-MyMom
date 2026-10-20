@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#FFF9F2">
-  <meta name="description" content="Món quà ấm áp và những khoảnh khắc yêu thương gửi tặng Mẹ kính yêu nhân Ngày Phụ Nữ Việt Nam 20/10.">
+  <meta name="description" content="Món quà 20/10 tặng Mẹ - Dòng thời gian Ngày ấy – Bây giờ nhìn lại hành trình yêu thương và những khoảnh khắc vô giá của Mẹ.">
 
   <!-- Open Graph / Zalo / Facebook / Messenger -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Thư Gửi Mẹ Yêu Thương - Mừng Ngày 20/10 💌">
-  <meta property="og:description" content="Chạm vào phong thư để mở món quà yêu thương và xem lại những khoảnh khắc sum vầy của gia đình mình Mẹ nhé!">
-  <meta property="og:image" content="images/01-gia-dinh-hanh-phuc.svg">
+  <meta property="og:title" content="Thư Gửi Mẹ Yêu Thương - Ngày Ấy & Bây Giờ 💌">
+  <meta property="og:description" content="Chạm vào phong thư để mở món quà 20/10 và cùng nhìn lại dòng thời gian hành trình tuyệt vời của Mẹ!">
+  <meta property="og:image" content="images/01.jpg">
 
-  <title>Gửi Mẹ Yêu Thương 💌 | 20/10</title>
+  <title>Gửi Mẹ Yêu Thương 💌 | Ngày Ấy & Bây Giờ</title>
 
   <!-- Favicon Heart -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
 
-  <!-- Google Fonts: Be Vietnam Pro (cực chuẩn tiếng Việt), Lora (serif ấm áp), Dancing Script & Playfair Display -->
+  <!-- Google Fonts: Be Vietnam Pro, Lora, Playfair Display, Dancing Script -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Dancing+Script:wght@600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Hiệu ứng cánh hoa / hạt tim rơi toàn màn hình -->
+  <!-- Hiệu ứng cánh hoa / trái tim rơi toàn màn hình -->
   <canvas id="petal-canvas" aria-hidden="true"></canvas>
 
   <!-- Nút điều khiển âm nhạc góc phải trên -->
@@ -36,7 +36,7 @@
     </button>
   </header>
 
-  <!-- Audio element (nhạc nền tùy chọn) -->
+  <!-- Nhạc nền tùy chọn -->
   <audio id="bg-audio" preload="none" loop></audio>
 
   <!-- ============================================== -->
@@ -49,13 +49,10 @@
         <h1 class="env-title" id="env-title">Gửi Mẹ yêu thương 💌</h1>
       </div>
 
-      <!-- Khối phong thư có thể tương tác -->
+      <!-- Khối phong thư có thể chạm -->
       <div id="envelope-wrapper" class="envelope-wrapper" role="button" tabindex="0" aria-label="Phong thư gửi Mẹ. Chạm vào đây để mở thư.">
         <div class="envelope">
-          <!-- Cánh sau phong thư -->
           <div class="env-back"></div>
-
-          <!-- Tờ giấy thư thò ra nhẹ bên trong -->
           <div class="env-letter-peek">
             <div class="peek-lines">
               <span class="peek-line"></span>
@@ -64,14 +61,8 @@
             </div>
             <span class="peek-heart">❤️</span>
           </div>
-
-          <!-- Các cánh gấp của phong thư -->
           <div class="env-pocket"></div>
-
-          <!-- Nắp phong thư (mở lật lên trên) -->
           <div class="env-flap"></div>
-
-          <!-- Con dấu sáp trái tim nổi bật -->
           <div class="env-seal" aria-hidden="true">
             <span class="seal-icon">❤️</span>
           </div>
@@ -103,7 +94,7 @@
           </button>
         </div>
 
-        <!-- Hoa văn trang trí góc -->
+        <!-- Hoa văn góc -->
         <div class="floral-corner top-left" aria-hidden="true">🌸</div>
         <div class="floral-corner top-right" aria-hidden="true">🌸</div>
 
@@ -115,7 +106,7 @@
 
         <!-- Thân bài lá thư -->
         <div class="letter-body" id="letter-paragraphs">
-          <!-- Nội dung tải tự động từ config.json -->
+          <!-- Render động từ config.json -->
         </div>
 
         <!-- Lời kết & Chữ ký -->
@@ -128,135 +119,199 @@
           </div>
         </footer>
 
-        <!-- Hoa văn trang trí góc dưới -->
         <div class="floral-corner bottom-left" aria-hidden="true">🌿</div>
         <div class="floral-corner bottom-right" aria-hidden="true">🌿</div>
 
-        <!-- Nút chuyển sang xem ảnh gia đình -->
+        <!-- Nút bấm chuyển sang Dòng thời gian -->
         <div class="letter-action-area">
-          <button id="go-to-slideshow-btn" class="primary-btn pulse-glow" type="button">
-            <span class="btn-icon">📸</span>
-            <span class="btn-text">Xem những khoảnh khắc của gia đình mình</span>
+          <button id="go-to-timeline-btn" class="primary-btn pulse-glow" type="button">
+            <span class="btn-icon">⏳</span>
+            <span class="btn-text">Cùng nhìn lại hành trình của Mẹ</span>
             <span class="btn-arrow">➔</span>
           </button>
-          <p class="btn-subtext">Cùng nhìn lại những kỷ niệm ấm áp bên Mẹ</p>
+          <p class="btn-subtext">Khám phá dòng thời gian "Ngày ấy – Bây giờ"</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================== -->
-  <!-- MÀN HÌNH 3: SLIDESHOW ẢNH GIA ĐÌNH            -->
+  <!-- MÀN HÌNH 3: DÒNG THỜI GIAN "NGÀY ẤY – BÂY GIỜ" -->
   <!-- ============================================== -->
-  <section id="screen-slideshow" class="screen screen-slideshow" aria-label="Bộ sưu tập ảnh gia đình" hidden>
-    <!-- Thanh điều hướng trên cùng -->
-    <nav class="slideshow-navbar" aria-label="Thanh công cụ ảnh">
-      <button id="back-to-letter-btn" class="nav-control-btn" type="button" aria-label="Quay lại đọc thư">
-        <span class="icon">💌</span>
-        <span class="text">Đọc lại thư</span>
-      </button>
+  <section id="screen-timeline" class="screen screen-timeline" aria-label="Dòng thời gian Ngày ấy - Bây giờ" hidden>
+    <!-- Thanh tiến trình cố định phía trên -->
+    <nav class="timeline-sticky-nav" aria-label="Thanh tiến trình dòng thời gian">
+      <div class="sticky-nav-content">
+        <button id="timeline-back-letter-btn" class="nav-pill-btn" type="button" aria-label="Quay lại đọc thư">
+          <span class="btn-icon">💌</span>
+          <span class="btn-label">Đọc lại thư</span>
+        </button>
 
-      <div class="photo-counter-badge" aria-live="polite">
-        <span id="current-index-display">1</span>
-        <span class="divider">/</span>
-        <span id="total-photos-display">4</span>
+        <div class="timeline-progress-badge" id="timeline-progress-badge" aria-live="polite">
+          Mốc <span id="current-stage-num">1</span>/<span id="total-stage-num">6</span>
+        </div>
+
+        <button id="open-compare-btn" class="nav-pill-btn compare-btn" type="button" aria-label="Mở so sánh Ngày ấy và Bây giờ">
+          <span class="btn-icon">⚖️</span>
+          <span class="btn-label">Ngày ấy ⇄ Bây giờ</span>
+        </button>
       </div>
 
-      <div class="navbar-right-actions">
-        <button id="zoom-toggle-btn" class="nav-control-btn icon-only" type="button" aria-label="Phóng to ảnh" title="Phóng to / Thu nhỏ">
-          <span class="icon">🔍</span>
-        </button>
-        <button id="autoplay-toggle-btn" class="nav-control-btn" type="button" aria-label="Tự động phát ảnh">
-          <span class="icon" id="autoplay-icon">⏸</span>
-          <span class="text" id="autoplay-text">Tự động</span>
-        </button>
+      <!-- Đường vạch tiến trình theo mức cuộn trang -->
+      <div class="scroll-progress-track">
+        <div id="scroll-progress-bar" class="scroll-progress-fill" style="width: 0%;"></div>
       </div>
     </nav>
 
-    <!-- Khu vực hiển thị ảnh chính -->
-    <main class="slide-viewport" id="slide-viewport" role="region" aria-roledescription="carousel" aria-label="Khu vực trình chiếu ảnh">
-      <!-- Nền mờ nghệ thuật từ chính bức ảnh -->
-      <div id="slide-backdrop" class="slide-backdrop" aria-hidden="true"></div>
-
-      <!-- Khung ảnh chính chứa ảnh không bị cắt mặt -->
-      <div class="slide-stage" id="slide-stage">
-        <!-- Loading spinner -->
-        <div id="image-loading-spinner" class="loading-spinner hidden" aria-label="Đang tải ảnh...">
-          <div class="spinner-ring"></div>
-          <span class="spinner-text">Đang tải ảnh... 🌸</span>
-        </div>
-
-        <!-- Ảnh chính -->
-        <img id="main-slide-img" class="main-slide-img" src="" alt="Ảnh kỷ niệm gia đình" draggable="false">
-
-        <!-- Lớp phủ thông báo phóng to -->
-        <div id="zoom-hint-pill" class="zoom-hint-pill" aria-hidden="true">
-          Chạm để phóng to 🔍
-        </div>
-      </div>
-
-      <!-- Nút bấm chuyển ảnh to, dễ chạm trên điện thoại -->
-      <button id="prev-photo-btn" class="slide-nav-btn prev-btn" type="button" aria-label="Xem ảnh trước">
-        <span class="nav-arrow" aria-hidden="true">◀</span>
-        <span class="nav-label">Trước</span>
-      </button>
-
-      <button id="next-photo-btn" class="slide-nav-btn next-btn" type="button" aria-label="Xem ảnh kế tiếp">
-        <span class="nav-label">Tiếp</span>
-        <span class="nav-arrow" aria-hidden="true">▶</span>
-      </button>
-    </main>
-
-    <!-- Phần chân trang: Chú thích ảnh & Dấu chấm tiến trình -->
-    <footer class="slideshow-footer">
-      <!-- Chú thích ảnh (lấy từ config.json) -->
-      <div id="photo-caption-card" class="photo-caption-card">
-        <p id="photo-caption-text" class="photo-caption-text">
-          <!-- Text chú thích ảnh -->
+    <!-- Nội dung chính của Dòng thời gian -->
+    <main class="timeline-main-wrapper">
+      <header class="timeline-hero-header">
+        <span class="timeline-badge-sub">Hành trình yêu thương</span>
+        <h1 class="timeline-main-title" id="timeline-heading-title">Ngày ấy – Bây giờ</h1>
+        <p class="timeline-subtitle" id="timeline-heading-subtitle">
+          Chặng đường yêu thương và những dấu ấn vô giá của Mẹ
         </p>
-      </div>
+      </header>
 
-      <!-- Dấu chấm tiến trình -->
-      <div id="photo-dots-indicator" class="photo-dots-indicator" role="tablist" aria-label="Danh sách các ảnh">
-        <!-- Tạo động bằng JS -->
-      </div>
-    </footer>
+      <!-- Khung dọc chứa các mốc thời gian -->
+      <div class="timeline-container" id="timeline-container">
+        <!-- Đường kẻ dọc nối các mốc -->
+        <div class="timeline-spine" aria-hidden="true">
+          <div class="spine-line-fill" id="spine-line-fill"></div>
+        </div>
 
-    <!-- Trạng thái khi không có ảnh hoặc lỗi tải -->
-    <div id="empty-photos-card" class="empty-photos-card hidden" role="alert">
-      <div class="empty-icon">🖼️</div>
-      <h3>Chưa có ảnh nào trong thư viện</h3>
-      <p>Hãy thêm ảnh vào thư mục <code>images/</code> và push lên GitHub để ảnh tự xuất hiện tại đây nhé!</p>
-      <button id="empty-back-btn" class="primary-btn" type="button">
-        Quay lại đọc thư 💌
-      </button>
-    </div>
+        <!-- Các thẻ mốc thời gian được tạo tự động bởi JavaScript -->
+        <div class="timeline-items-list" id="timeline-items-list">
+          <!-- Render động từ config.timeline -->
+        </div>
+
+        <!-- Thẻ kết thúc dòng thời gian -->
+        <div class="timeline-end-card" id="timeline-end-card">
+          <div class="end-card-badge">🌸 20 / 10 YÊU THƯƠNG 🌸</div>
+          <div class="end-heart-icon" aria-hidden="true">💖</div>
+          <h2 class="end-card-title">Con yêu Mẹ rất nhiều!</h2>
+          <p class="end-card-message">
+            Cảm ơn Mẹ đã luôn là người Mẹ tuyệt vời nhất trên đời của chúng con. Chúc Mẹ một ngày 20/10 thật hạnh phúc, dồi dào sức khỏe và luôn rạng ngời nụ cười!
+          </p>
+
+          <div class="end-card-actions">
+            <button id="end-compare-btn" class="secondary-btn" type="button">
+              <span class="btn-icon">⚖️</span>
+              <span class="btn-text">So sánh Ngày ấy ⇄ Bây giờ</span>
+            </button>
+            <button id="end-restart-btn" class="primary-btn" type="button">
+              <span class="btn-icon">🔄</span>
+              <span class="btn-text">Xem lại từ đầu</span>
+            </button>
+            <button id="end-read-letter-btn" class="secondary-btn" type="button">
+              <span class="btn-icon">💌</span>
+              <span class="btn-text">Đọc lại lá thư</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
   </section>
 
   <!-- ============================================== -->
-  <!-- MÀN HÌNH KẾT THÚC / LỜI NHẮN TRÁI TIM           -->
+  <!-- MODAL: PHÓNG TO ẢNH (LIGHTBOX)                 -->
   <!-- ============================================== -->
-  <aside id="modal-ending" class="modal-backdrop hidden" aria-modal="true" role="dialog" aria-labelledby="ending-title">
-    <div class="modal-card celebration-card">
-      <div class="celebration-badge">🌸 20 / 10 🌸</div>
-      <div class="celebration-heart" aria-hidden="true">💖</div>
-      <h2 id="ending-title" class="ending-title">Con yêu Mẹ rất nhiều!</h2>
-      <p id="ending-message" class="ending-message">
-        Cảm ơn Mẹ đã luôn là người Mẹ tuyệt vời nhất trên đời của chúng con. Chúc Mẹ một ngày 20/10 thật hạnh phúc và ngập tràn nụ cười!
-      </p>
+  <dialog id="lightbox-modal" class="lightbox-dialog" aria-label="Xem ảnh phóng to">
+    <div class="lightbox-content">
+      <button id="close-lightbox-btn" class="lightbox-close-btn" type="button" aria-label="Đóng ảnh phóng to">
+        <span class="close-icon">✕</span>
+        <span class="close-text">Đóng</span>
+      </button>
 
-      <div class="ending-actions">
-        <button id="restart-slideshow-btn" class="primary-btn" type="button">
-          <span class="btn-icon">🔄</span>
-          <span class="btn-text">Xem lại ảnh từ đầu</span>
-        </button>
-        <button id="ending-read-letter-btn" class="secondary-btn" type="button">
-          <span class="btn-icon">💌</span>
-          <span class="btn-text">Đọc lại bức thư</span>
-        </button>
+      <div class="lightbox-img-box">
+        <img id="lightbox-img" class="lightbox-img" src="" alt="Ảnh phóng to" draggable="false">
+      </div>
+
+      <div class="lightbox-info">
+        <span class="lightbox-year" id="lightbox-year">1992</span>
+        <h3 class="lightbox-title" id="lightbox-title">Tiêu đề ảnh</h3>
+        <p class="lightbox-caption" id="lightbox-caption">Lời kể kỷ niệm...</p>
       </div>
     </div>
-  </aside>
+  </dialog>
+
+  <!-- ============================================== -->
+  <!-- MODAL: SO SÁNH "NGÀY ẤY ⇄ BÂY GIỜ"            -->
+  <!-- ============================================== -->
+  <dialog id="compare-modal" class="compare-dialog" aria-label="So sánh Ngày ấy và Bây giờ">
+    <div class="compare-modal-content">
+      <header class="compare-header">
+        <div class="compare-title-group">
+          <span class="compare-badge">✨ Khoảnh khắc thời gian ✨</span>
+          <h2 class="compare-title">Ngày ấy & Bây giờ</h2>
+          <p class="compare-sub">
+            Thời gian trôi qua, nhưng nụ cười và tình yêu thương của Mẹ vẫn vẹn nguyên như ngày đầu.
+          </p>
+        </div>
+        <button id="close-compare-btn" class="close-pill-btn" type="button" aria-label="Đóng chế độ so sánh">
+          <span class="close-icon">✕</span>
+          <span class="close-text">Đóng</span>
+        </button>
+      </header>
+
+      <!-- Bộ so sánh kéo trượt Before / After bằng 1 ngón tay -->
+      <div class="compare-slider-container" id="compare-slider-container">
+        <!-- Ảnh Ngày ấy (Bên trái / Nền dưới) -->
+        <div class="compare-photo-layer before-layer">
+          <img id="compare-before-img" class="compare-img" src="" alt="Ảnh Ngày ấy">
+          <div class="compare-label before-tag">
+            <span class="tag-icon">⏳</span>
+            <span id="compare-before-label">Ngày ấy</span>
+          </div>
+        </div>
+
+        <!-- Ảnh Bây giờ (Bên phải / Lớp phủ trượt) -->
+        <div class="compare-photo-layer after-layer" id="compare-after-layer">
+          <img id="compare-after-img" class="compare-img" src="" alt="Ảnh Bây giờ">
+          <div class="compare-label after-tag">
+            <span class="tag-icon">💖</span>
+            <span id="compare-after-label">Bây giờ</span>
+          </div>
+        </div>
+
+        <!-- Thanh trượt điều khiển cảm ứng -->
+        <div class="compare-divider" id="compare-divider" aria-hidden="true">
+          <div class="divider-line"></div>
+          <div class="divider-handle">
+            <span class="handle-arrow">◀</span>
+            <span class="handle-icon">❤️</span>
+            <span class="handle-arrow">▶</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hướng dẫn trượt bằng ngón tay -->
+      <div class="compare-instruction">
+        <span class="drag-hint">👆 Chạm và kéo thanh trượt để so sánh</span>
+      </div>
+
+      <!-- Nút xem dạng 2 ảnh cạnh nhau nếu muốn -->
+      <div class="compare-toggle-view">
+        <button id="toggle-compare-mode-btn" class="text-pill-btn" type="button">
+          🔄 Đổi sang xem 2 ảnh cạnh nhau
+        </button>
+      </div>
+
+      <!-- Khung xem 2 ảnh cạnh nhau (Side by side) -->
+      <div class="compare-side-by-side hidden" id="compare-side-by-side">
+        <div class="side-card">
+          <span class="side-tag before">Ngày ấy</span>
+          <img id="side-before-img" class="side-img" src="" alt="Ngày ấy">
+          <p class="side-year" id="side-before-year">Năm 1992</p>
+        </div>
+        <div class="side-card">
+          <span class="side-tag after">Bây giờ</span>
+          <img id="side-after-img" class="side-img" src="" alt="Bây giờ">
+          <p class="side-year" id="side-after-year">BÂY GIỜ</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
   <script src="js/app.js"></script>
 </body>

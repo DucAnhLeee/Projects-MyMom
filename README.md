@@ -1,19 +1,19 @@
-# 💌 Thư Gửi Mẹ Yêu Thương - Mừng Ngày 20/10 🌸
+# ⏳ Thư Gửi Mẹ - Dòng Thời Gian "Ngày Ấy & Bây Giờ" 🌸
 
-> Món quà công nghệ ấm áp, đong đầy yêu thương dành tặng Mẹ nhân Ngày Phụ nữ Việt Nam 20/10.  
-> Trải nghiệm trên điện thoại: **Mẹ mở link → Thấy phong thư sang trọng → Chạm vào mở thư đọc lời chúc → Thưởng thức chuỗi ảnh kỷ niệm gia đình.**
+> Món quà 20/10 đong đầy xúc cảm dành tặng Mẹ kính yêu.  
+> Trải nghiệm trên điện thoại: **Mở link → Thấy phong thư sang trọng → Chạm mở thư đọc lời chúc → Bấm sang dòng thời gian "Ngày ấy – Bây giờ" gồm 6 mốc ảnh quan trọng của Mẹ từ quá khứ đến hiện tại.**
 
 ---
 
-## 🌟 Tính Năng Nổi Bật
+## 🌟 Điểm Nổi Bật Của Món Quà
 
-- 📱 **Mobile-First chuẩn mực**: Thiết kế chuyên biệt cho màn hình điện thoại (360px – 430px), hỗ trợ tai thỏ iPhone (safe-area), không bị tràn ngang.
-- 👵 **Thân thiện với người lớn tuổi**: Cỡ chữ to (>= 20px), độ tương phản cao sắc nét, font chữ tiếng Việt chuẩn đẹp, nút bấm to dễ chạm.
-- ✉️ **Hiệu ứng mở phong thư chân thực**: Con dấu sáp trái tim, cánh nắp mở 60fps mượt mà kèm âm thanh chuông ngân nga êm dịu.
-- 📸 **Tự động cập nhật ảnh thông minh**: Chỉ cần bỏ ảnh vào thư mục `images/` và đẩy lên GitHub, GitHub Actions sẽ tự động đưa ảnh vào trình chiếu mà **không cần sửa một dòng code nào**!
-- 🖼️ **Trình chiếu ảnh gia đình không cắt mặt**: Ảnh luôn hiển thị trọn vẹn (`object-fit: contain`) cùng hiệu ứng nền mờ nghệ thuật từ chính bức ảnh.
-- 👆 **Cử chỉ vuốt chạm tiện lợi**: Vuốt trái/phải để chuyển ảnh, chạm vào ảnh để phóng to ngắm nhìn rõ nét nụ cười của Mẹ.
-- 🎵 **Nhạc nền tùy chọn**: Thêm bài hát mẹ thích dễ dàng; tự động ẩn nút nếu chưa có nhạc.
+- 📱 **Mobile-First chuẩn mực**: Thiết kế chuyên biệt cho điện thoại (360px – 430px), hỗ trợ tai thỏ iPhone (safe-area), không bị tràn ngang.
+- 👵 **Thân thiện với người lớn tuổi**: Cỡ chữ to rõ ràng (>= 20px), độ tương phản cao sắc nét (chuẩn WCAG AAA), font chữ tiếng Việt có dấu đẹp mắt, nút bấm to dễ chạm.
+- ✉️ **Hiệu ứng mở phong thư chân thực**: Con dấu sáp trái tim, cánh nắp mở 60fps mượt mà kèm tiếng chuông ngân nga dịu êm.
+- ⏳ **Dòng thời gian "Ngày ấy – Bây giờ"**: 6 mốc thời gian dọc theo cuộc đời Mẹ (Thuở thanh xuân ➜ Ngày cưới ➜ Khi con chào đời ➜ Những năm tháng vì con ➜ Gia đình sum vầy ➜ BÂY GIỜ). Mốc cuối "BÂY GIỜ" được viền vàng gold sang trọng nổi bật!
+- ⚖️ **Chế độ so sánh "Ngày ấy ⇄ Bây giờ"**: Thanh trượt cảm ứng bằng một ngón tay cho phép Mẹ so sánh bức ảnh thuở đôi mươi và bức ảnh hiện tại.
+- 🔍 **Xem ảnh phóng to toàn màn hình**: Chạm vào bất kỳ ảnh nào để ngắm rõ từng nụ cười, có nút "✕ Đóng" to rõ.
+- 🎵 **Nhạc nền tùy chọn**: Tự động phát nhạc khi Mẹ muốn (đã có sẵn file mẫu trong thư mục `audio/`).
 
 ---
 
@@ -25,163 +25,151 @@
 ├── css/
 │   └── style.css                ← Giao diện ấm áp, tương phản cao, tối ưu di động
 ├── js/
-│   └── app.js                   ← Hiệu ứng mở thư, cử chỉ vuốt, slideshow ảnh
-├── images/                      ← THƯ MỤC CHỨA ẢNH GIA ĐÌNH CỦA BẠN
-│   ├── 01-gia-dinh-hanh-phuc.svg
-│   ├── 02-me-va-con.svg
-│   ├── 03-ky-niem-am-ap.svg
-│   ├── 04-chuc-mung-20-10.svg
-│   └── README.txt               ← Hướng dẫn định dạng & kích thước ảnh
-├── audio/                       ← THƯ MỤC CHỨA NHẠC NỀN (TÙY CHỌN)
-│   └── README.txt               ← Hướng dẫn thêm nhạc tặng Mẹ
-├── config.json                  ← Nơi chỉnh lời chúc, tên Mẹ, chú thích ảnh
-├── photos.json                  ← Danh sách ảnh (tự động cập nhật bởi script)
-├── scripts/
-│   └── generate-photos.js       ← Tự động quét ảnh trong images/
+│   └── app.js                   ← Mở thư, cuộn mốc thời gian, bộ so sánh Ngày ấy - Bây giờ
+├── images/                      ← THƯ MỤC CHỨA 6 ẢNH KỶ NIỆM CỦA MẸ
+│   ├── 01.jpg                   ← Mốc 1: Thuở thanh xuân
+│   ├── 02.jpg                   ← Mốc 2: Ngày cưới hạnh phúc
+│   ├── 03.jpg                   ← Mốc 3: Khi con chào đời
+│   ├── 04.jpg                   ← Mốc 4: Những năm tháng vì con
+│   ├── 05.jpg                   ← Mốc 5: Gia đình sum vầy
+│   ├── 06.jpg                   ← Mốc 6: BÂY GIỜ (Hiện tại)
+│   └── README.txt               ← Hướng dẫn chi tiết về ảnh
+├── audio/                       ← THƯ MỤC CHỨA NHẠC NỀN
+│   ├── nhac-tang-me.mp3         ← Bài hát tặng Mẹ
+│   └── README.txt
+├── config.json                  ← TOÀN BỘ nội dung: Lời chúc + 6 mốc thời gian
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml           ← Tự động chạy và cập nhật web mỗi lần push
+│       └── deploy.yml           ← Tự động deploy lên GitHub Pages mỗi lần push
 └── README.md
 ```
 
 ---
 
-## 🚀 Hướng Dẫn Từng Bước (Dành Cho Mọi Người)
+## 🚀 Hướng Dẫn Từng Bước (Cho Người Không Rành Code)
 
-### 1. Cách đưa dự án lên GitHub và lấy Link trang web
+### 1. Cách đưa dự án lên GitHub & Lấy link cho Mẹ
 
-#### Bước 1: Tạo kho lưu trữ (Repository) trên GitHub
-1. Đăng nhập vào tài khoản [GitHub.com](https://github.com/).
-2. Bấm vào dấu **`+`** ở góc trên cùng bên phải → Chọn **New repository**.
-3. Đặt tên kho lưu trữ, ví dụ: `thu-gui-me-20-10`.
-4. Chọn chế độ **Public** (để dùng được tính năng GitHub Pages miễn phí).
-5. **Không** tích chọn "Add a README file" (vì dự án đã có sẵn file README).
+#### Bước 1: Tạo kho lưu trữ (Repository) mới trên GitHub
+1. Đăng nhập [GitHub.com](https://github.com/).
+2. Bấm vào dấu **`+`** ở góc trên bên phải → Chọn **New repository**.
+3. Đặt tên gợi ý: **`ngay-ay-bay-gio-20-10`**.
+4. Chọn chế độ **Public** (để dùng GitHub Pages miễn phí).
+5. **Không** tích chọn "Add a README file" hay bất kỳ tùy chọn nào khác.
 6. Bấm nút xanh **Create repository**.
 
 #### Bước 2: Đẩy mã nguồn từ máy tính lên GitHub
-Mở terminal (PowerShell hoặc Command Prompt) tại thư mục dự án và chạy các lệnh sau (thay `YOUR-USERNAME` bằng tên GitHub của bạn):
+Mở PowerShell tại thư mục dự án và chạy các lệnh sau (thay `<ten-tai-khoan-github>` bằng username của bạn):
 
-```bash
-# Khởi tạo git và commit
-git init
-git add .
-git commit -m "Khoi tao mon qua 20/10 tang Me"
-
-# Đổi tên nhánh chính thành main
+```powershell
+git remote add origin https://github.com/<ten-tai-khoan-github>/ngay-ay-bay-gio-20-10.git
 git branch -M main
-
-# Kết nối đến repo vừa tạo trên GitHub
-git remote add origin https://github.com/YOUR-USERNAME/thu-gui-me-20-10.git
-
-# Đẩy code lên GitHub
 git push -u origin main
 ```
 
-#### Bước 3: Kích hoạt GitHub Pages (Rất quan trọng!)
-1. Trên trang repo GitHub của bạn, bấm vào tab **Settings** (Cài đặt).
-2. Ở thanh bên trái, tìm mục **Pages** (dưới nhóm *Code and automation*).
-3. Tại phần **Build and deployment** → mục **Source**, bạn chọn:  
-   👉 **`GitHub Actions`** (thay vì Deploy from a branch).
-4. Hệ thống sẽ tự động kích hoạt workflow `deploy.yml`. Đợi khoảng 1-2 phút, bạn sẽ thấy đường link trang web xuất hiện ngay trên đầu trang Pages, có dạng:  
-   👉 **`https://YOUR-USERNAME.github.io/thu-gui-me-20-10/`**
+#### Bước 3: Bật GitHub Pages bằng GitHub Actions (Rất quan trọng!)
+1. Trên repo GitHub của bạn, bấm vào tab **Settings** (Cài đặt).
+2. Ở menu bên trái, tìm mục **Pages** (dưới nhóm *Code and automation*).
+3. Tại phần **Build and deployment** → mục **Source**, chọn:  
+   👉 **`GitHub Actions`**
+4. Chờ khoảng 1 phút để GitHub Actions chạy xong. Đường link trang web sẽ hiển thị ngay trên đầu trang Pages:  
+   👉 **`https://<ten-tai-khoan-github>.github.io/ngay-ay-bay-gio-20-10/`**
 
 ---
 
-### 2. Cách thêm ảnh gia đình vào slideshow (Cực kỳ dễ)
+### 2. Cách thay 6 bức ảnh của gia đình (Cực kỳ dễ)
 
-#### Cách làm trực tiếp trên web GitHub (không cần cài phần mềm):
-1. Mở repo của bạn trên GitHub.
-2. Bấm vào thư mục `images`.
-3. Bấm nút **Add file** (ở góc phải) → Chọn **Upload files**.
-4. Kéo thả các bức ảnh kỷ niệm gia đình từ máy tính/điện thoại vào.
-5. Cuộn xuống dưới cùng và bấm nút xanh **Commit changes**.
-6. **Xong!** GitHub Actions sẽ tự động phát hiện ảnh mới, cập nhật danh sách và đưa lên trang web trong vòng 1-2 phút.
+Hệ thống đã định sẵn 6 file ảnh trong thư mục `images/`:
+- `01.jpg` – Thuở thanh xuân của Mẹ
+- `02.jpg` – Ngày cưới của Ba Mẹ
+- `03.jpg` – Lúc Mẹ sinh con đầu lòng
+- `04.jpg` – Những năm tháng vất vả nuôi con khôn lớn
+- `05.jpg` – Cả gia đình sum vầy bên Mẹ
+- `06.jpg` – Bức ảnh đẹp nhất của Mẹ **BÂY GIỜ**
 
-#### Đặt tên file ảnh để sắp xếp thứ tự:
-- Hãy đặt tên file có số thứ tự ở đầu, ví dụ:
-  - `01-gia-dinh-di-choi.jpg`
-  - `02-me-nau-an.jpg`
-  - `03-ca-nha-sum-vay.jpg`
-- **Định dạng hỗ trợ**: `.jpg`, `.jpeg`, `.png`, `.webp`.  
-  *(Lưu ý: Nếu chụp bằng iPhone có đuôi `.heic`, hãy đổi sang `.jpg` trước khi tải lên).*
-- **Xóa ảnh mẫu minh họa**: Trong thư mục `images/` có 4 file mẫu đuôi `.svg`. Khi đã có ảnh thật của gia đình, bạn có thể bấm vào từng file đó trên GitHub và chọn biểu tượng thùng rác để xóa đi.
+#### Cách thay ảnh trực tiếp trên trình duyệt (không cần cài phần mềm):
+1. Vào repo trên GitHub ➜ Bấm vào thư mục **`images`**.
+2. Bấm nút **Add file** (góc phải) ➜ Chọn **Upload files**.
+3. Chọn 6 bức ảnh thật của gia đình bạn (đặt đúng tên từ `01.jpg` đến `06.jpg`).
+4. Kéo thả vào trình duyệt và cuộn xuống bấm nút xanh **Commit changes**.
+5. **Xong!** GitHub sẽ tự cập nhật trang web sau khoảng 1 phút.
+
+> 💡 **Mẹo nhỏ về ảnh**:
+> - Khuyến nghị ảnh có dung lượng dưới 500 KB để Mẹ mở bằng 4G tải cực nhanh. Nén ảnh miễn phí tại: [tinypng.com](https://tinypng.com/)
+> - Nếu ảnh chụp từ iPhone có đuôi `.heic`, hãy đổi sang `.jpg` trước khi tải lên.
 
 ---
 
-### 3. Cách sửa lời chúc, tên Mẹ và người gửi
+### 3. Cách sửa lời chúc, năm và lời kể trong `config.json`
 
-Mở file **`config.json`** (có thể bấm biểu tượng cây bút ✏️ để sửa trực tiếp trên GitHub):
+Mở file **`config.json`** trên GitHub (bấm vào biểu tượng cây bút ✏️ để sửa trực tiếp):
 
 ```json
 {
   "recipientName": "Mẹ yêu",
-  "senderName": "Con trai của Mẹ",
-  "occasion": "Mừng Ngày Phụ Nữ Việt Nam 20/10",
-  "date": "Ngày 20 tháng 10 năm 2024",
+  "senderName": "Con của Mẹ",
   "letter": {
     "greeting": "Gửi Mẹ kính yêu của con,",
     "paragraphs": [
       "Nhân ngày Phụ nữ Việt Nam 20/10, con xin gửi đến Mẹ những lời chúc ấm áp...",
-      "Cảm ơn Mẹ vì bao năm tháng qua đã luôn tần tảo, chở che cho chúng con...",
-      "Con chúc Mẹ luôn dồi dào sức khỏe và mỗi ngày đều ngập tràn niềm vui!"
-    ],
-    "closing": "Con yêu Mẹ rất nhiều ❤️",
-    "signature": "Con của Mẹ"
-  }
+      "Hôm nay, con muốn cùng Mẹ nhìn lại cuốn phim thời gian..."
+    ]
+  },
+  "timeline": [
+    {
+      "image": "images/01.jpg",
+      "year": "1992",
+      "stage": "Thuở thanh xuân",
+      "title": "Nụ cười rạng rỡ tuổi đôi mươi",
+      "caption": "Mẹ của những năm tháng thanh xuân tươi đẹp nhất..."
+    },
+    ...
+    {
+      "image": "images/06.jpg",
+      "year": "BÂY GIỜ",
+      "stage": "BÂY GIỜ",
+      "title": "Mẹ mãi là điều tuyệt vời nhất",
+      "caption": "Dù mái tóc Mẹ đã điểm thêm sợi bạc, Mẹ vẫn luôn là người phụ nữ đẹp nhất..."
+    }
+  ]
 }
 ```
 
-- Bạn có thể viết thêm bao nhiêu đoạn văn tùy thích vào mảng `paragraphs`.
+- Bạn có thể chỉnh lại số năm (`year`), tên giai đoạn (`stage`), tiêu đề (`title`) và lời tâm sự (`caption`) phù hợp với câu chuyện gia đình mình.
+- Sau khi sửa xong, bấm nút **Commit changes** ở góc phải để lưu lại.
 
 ---
 
-### 4. Cách thêm chú thích dưới từng bức ảnh (Tùy chọn)
+### 4. Cách bật/tắt nhạc nền
 
-Trong file `config.json`, bạn tìm mục `"captions"` và điền tên file ảnh kèm câu nói bạn muốn:
-
-```json
-"captions": {
-  "01-gia-dinh-di-choi.jpg": "Cả nhà mình cùng đi Đà Lạt ngắm hoa 🌸",
-  "02-me-nau-an.jpg": "Những món ăn ngon nhất trên đời chỉ có bàn tay Mẹ nấu ❤️"
-}
-```
-*Nếu ảnh nào bạn không ghi chú thích thì trang web sẽ chỉ hiện ảnh trọn vẹn, không hiện thanh chữ.*
+- Dự án đã có sẵn file nhạc mẫu `audio/nhac-tang-me.mp3`.
+- Bạn có thể thay bằng bài hát Mẹ yêu thích (ví dụ: *Nhật Ký Của Mẹ*, *Mẹ Yêu*, *Ước Mơ Của Mẹ*...) bằng cách copy file `.mp3` mới vào thư mục `audio/` và giữ nguyên tên `nhac-tang-me.mp3`.
+- Nút **"Bật nhạc 🎵"** hiển thị trang nhã ở góc trên bên phải màn hình. Mẹ có thể bấm bật/tắt bất kỳ lúc nào. Nếu không có file nhạc, nút sẽ tự động ẩn đi.
 
 ---
 
-### 5. Cách thêm nhạc nền tặng Mẹ (Tùy chọn)
+### 5. Cách gửi quà cho Mẹ & Tạo mã QR ý nghĩa
 
-1. Tải một bài hát ý nghĩa (ví dụ: *Nhật Ký Của Mẹ*, *Ước Mơ Của Mẹ* hoặc một bản hòa tấu piano nhẹ nhàng) dưới định dạng `.mp3`.
-2. Bỏ file nhạc vào thư mục `audio/` và đặt tên là: **`nhac-tang-me.mp3`**.
-3. Đẩy lên GitHub. Trang web sẽ tự động xuất hiện nút **"Bật nhạc 🎵"** trang nhã ở góc trên màn hình để Mẹ bấm nghe.
-
----
-
-### 6. Cách gửi quà cho Mẹ & Tạo mã QR ý nghĩa
-
-1. **Gửi qua Zalo / Messenger / Tin nhắn SMS**:  
-   Gửi đường link trang web của bạn cho Mẹ kèm lời nhắn:  
-   *"Mẹ ơi, hôm nay 20/10 con có một bức thư đặc biệt gửi tặng Mẹ, Mẹ chạm vào đường link này để mở thư nhé: [Link của bạn]"*  
-   *(Khi gửi qua Zalo/Messenger, link sẽ tự hiện tiêu đề "Thư Gửi Mẹ Yêu Thương" và ảnh bìa trái tim rất đẹp).*
-
-2. **In mã QR lên thiệp hoa thực tế**:  
-   Bạn có thể vào trang [me-qr.com](https://me-qr.com/) hoặc [qr-code-generator.com](https://www.qr-code-generator.com/), dán link trang web vào để tạo mã QR. Sau đó in ra dán vào bó hoa tươi tặng Mẹ. Mẹ chỉ cần dùng camera điện thoại quét mã là mở ra ngay!
+1. **Gửi qua Zalo / Messenger**:  
+   Gửi đường link cho Mẹ kèm lời nhắn yêu thương. Link đã được cài sẵn ảnh bìa và tiêu đề thiệp đẹp mắt.
+2. **In mã QR lên hoa tươi hoặc thiệp viết tay**:  
+   Truy cập [me-qr.com](https://me-qr.com/) hoặc [qr-code-generator.com](https://www.qr-code-generator.com/), dán link trang web vào để tạo mã QR. In mã dán lên thiệp mừng tặng Mẹ, hướng dẫn Mẹ dùng camera điện thoại quét để mở quà!
 
 ---
 
 ## ❓ Câu Hỏi Thường Gặp & Xử Lý Sự Cố
 
-- **Hỏi: Tôi vừa tải ảnh lên nhưng mở link trang web vẫn chưa thấy ảnh mới?**  
-  *Đáp*: Trình duyệt thường lưu bộ nhớ đệm (cache). Bạn hãy:  
-  1. Vào tab **Actions** trên GitHub xem quy trình deploy đã hiện dấu tích xanh ✅ chưa (khoảng 1 phút).  
-  2. Mở link trên điện thoại bằng tab ẩn danh (Private/Incognito) hoặc vuốt xuống để tải lại trang.
+- **Hỏi: Tôi vừa thay ảnh và sửa lời chúc nhưng vào web chưa thấy đổi?**  
+  *Đáp*: Trình duyệt thường lưu cache. Bạn hãy:
+  1. Vào tab **Actions** trên repo GitHub xem quy trình deploy đã hiện dấu tích xanh ✅ chưa (khoảng 1 phút).
+  2. Mở web bằng tab ẩn danh (Private/Incognito) trên điện thoại hoặc vuốt kéo xuống để tải lại trang.
 
-- **Hỏi: Ảnh tải qua 4G có bị chậm không?**  
-  *Đáp*: Bạn nên nén ảnh trước khi tải lên (giữ dung lượng mỗi bức ảnh dưới 1MB). Trang web đã tích hợp sẵn tính năng tự động tải trước ảnh kế tiếp (preload) nên khi Mẹ vuốt xem ảnh sẽ rất mượt mà.
+- **Hỏi: Một ảnh bị lỗi không tải được thì có bị trang trắng không?**  
+  *Đáp*: Không! Trang web có cơ chế bảo vệ tự động: nếu ảnh nào bị lỗi, hệ thống sẽ hiện một khung thiệp hoa ấm áp ghi rõ mốc thời gian thay vì để ô trống hay bị gián đoạn.
 
-- **Hỏi: Tính riêng tư của ảnh gia đình thế nào?**  
-  *Đáp*: Vì GitHub Pages miễn phí yêu cầu kho lưu trữ Public, bất kỳ ai có đường link đều có thể xem được nội dung. Do đó, bạn hãy chọn lọc những bức ảnh kỷ niệm vui vẻ, phù hợp để chia sẻ với gia đình nhé.
+- **Hỏi: Tính riêng tư của ảnh thế nào?**  
+  *Đáp*: Vì GitHub Pages miễn phí yêu cầu kho lưu trữ Public, bất kỳ ai có đường link đều xem được. Bạn nên chọn lọc những bức ảnh kỷ niệm vui tươi, ấm áp và phù hợp với gia đình nhé!
 
 ---
 
-Chúc Mẹ của bạn có một ngày 20/10 thật hạnh phúc, ấm áp và xúc động khi nhận được món quà này! 💐💖
+Chúc Mẹ của bạn có một ngày 20/10 ngập tràn nụ cười, hạnh phúc và xúc động khi cùng con nhìn lại hành trình tuyệt vời này! 🌸💖
