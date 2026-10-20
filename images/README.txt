@@ -36,3 +36,23 @@ LƯU Ý:
 - Khuyến nghị ảnh < 500 KB mỗi tấm để tải vù vù trên 4G điện thoại. Nén ảnh tại: https://tinypng.com/
 - Nếu ảnh từ iPhone đuôi .heic, vui lòng đổi sang .jpg trước khi tải lên.
 - Bạn có thể mở file `config.json` để sửa thêm lời chúc hoặc câu từ nếu muốn.
+
+5. NĂM 2025 (Tôi và Mẹ tôi - 1 tấm, con 19 tuổi):
+   - `05.jpg`
+
+6. NĂM 2026 (Tôi với Mẹ tôi - 1 tấm, con 20 tuổi - BÂY GIỜ):
+   - `06.jpg`
+
+------------------------------------------------------------------------
+CÁCH THAY ẢNH NHANH NHẤT TRÊN GITHUB:
+1. Vào thư mục `images` trên GitHub.
+2. Bấm "Add file" → "Upload files".
+3. Kéo thả các bức ảnh thật của bạn (đặt đúng tên từ 01a.jpg, 01b.jpg, 02.jpg đến 06.jpg) vào.
+4. Bấm nút xanh "Commit changes".
+5. GitHub sẽ tự động cập nhật trang web sau khoảng 1 phút!
+
+LƯU Ý:
+- Khuyến nghị ảnh < 500 KB mỗi tấm để tải vù vù trên 4G điện thoại. Nén ảnh tại: https://tinypng.com/
+- Nếu ảnh từ iPhone đuôi .heic, vui lòng đổi sang .jpg trước khi tải lên.
+- Bạn có thể mở file `config.json` để sửa thêm lời chúc hoặc câu từ nếu muốn.
+
